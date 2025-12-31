@@ -1,3 +1,7 @@
-import {greeting} from "./greeting.js";
+import project from "./project.js";
+import "./styles.css";
 
-alert(greeting);
+const project_btn = document.getElementById("projectBTN");
+project_btn.addEventListener("click",()=>{
+    project();
+})

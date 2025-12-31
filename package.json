@@ -1,24 +1,32 @@
 {
-  "name": "webpack-practice",
+  "name": "ToDo List JS",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx webpack serve --port 3000"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andrewfarmer13/Webpack-practice.git"
+    "url": "git+https://github.com/andrewfarmer13/To-Do-List-JS.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/andrewfarmer13/Webpack-practice/issues"
+    "url": "https://github.com/andrewfarmer13/To-Do-List-JS/issues"
   },
-  "homepage": "https://github.com/andrewfarmer13/Webpack-practice#readme",
+  "homepage": "https://github.com/andrewfarmer13/To-Do-List-JS#readme",
   "devDependencies": {
+    "html-webpack-plugin": "^5.6.5",
     "webpack": "^5.104.1",
-    "webpack-cli": "^6.0.1"
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2"
+  },
+  "dependencies": {
+    "css-loader": "^7.1.2",
+    "html-loader": "^5.1.0",
+    "style-loader": "^4.0.0"
   }
 }

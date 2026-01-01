@@ -6,18 +6,33 @@
     <title>To-Do List</title>
 </head>
 <body>
-    <nav style="">
-        <ul><button id="projectBTN">Add New Project</button></ul>
-        <ul><button>Add New Task</button></ul>
-        <ul><button></button></ul>
+    <nav>
+        <ul>
+            <li><button id="projectBTN">Add New Project</button></li>
+            <li><button id="taskButton">Add New Task</button></li>
+            <li><button></button></li>
+        </ul>
     </nav>
     <div id="main-container">
         <aside>
             <ul><div>Task</div></ul>
         </aside>
         <div id="content">
+             <dialog id = "modal-task">
+                <h1 class="modal-header">Add Task</h1>
+                <form>
+                    <div>
+                        <label>Task Name: </label><input type="text" id="title" placeholder="Task">
+                        <label>Description: </label><input type="text" id="textDesc" placeholder="Description">
+                    </div>
+                    <button id="close-task" type="button">Add Task</button>
+                </form>
+            </dialog>
+            <div id="cards-container">
 
+            </div>
         </div>
+       
     </div>
     
 </body>

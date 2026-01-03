@@ -99,7 +99,11 @@ aside>ul:hover{
     margin-left: 5px;
     gap: 8px;
 
+    text-wrap: wrap ;
 
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.cards-div:hover{
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
     transition: box-shadow 0.2s ease;
 }

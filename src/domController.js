@@ -1,5 +1,5 @@
 
-export class modal{
+export class update{
 
     constructor(modalSelector){
         this.dialogue = document.getElementById(modalSelector);
@@ -14,12 +14,14 @@ export class modal{
 
     }
 
-    addContent(){
+    updateDom(){
         const titleInput = document.getElementById("title");
         const descInput = document.getElementById("textDesc");
         const docBody = document.getElementById("cards-container");
         const div = document.createElement("div");
-        div.className = "cards";
+        const del = document.createElement("button");
+        div.classList.add("cards-div");
+        div.id = crypto.randomUUID();
 
         const titleHeader = document.createElement("h1");
         titleHeader.textContent = titleInput.value;
@@ -28,6 +30,14 @@ export class modal{
         const descPara = document.createElement("p");
         descPara.textContent = descInput.value;
         div.appendChild(descPara);
+
+        del.classList.add("delBTN");
+        del.textContent = "Delete";
+
+        del.addEventListener("click", ()=>{
+           div.remove();
+        })
+        div.appendChild(del);
         
         
         docBody.appendChild(div);
@@ -39,4 +49,4 @@ export class modal{
 
 }
 
-export default modal;
+export default update;
